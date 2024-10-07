@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="get">
+        <table border="1">
+            <tr>
+                <td><label for="fname">First Name : </label></td>
+                <td>
+                    <input type="text" id="fname" name="fname" placeholder="First Name">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="lname">Last Name : </label></td>
+                <td>
+                    <input type="text" id="lname" name="lname" placeholder="Last Name">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="TL">Tanggal Lahir</label></td>
+                <td>
+                    <input type="date" name="TL" value="tgllahir">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Gender">Gender</label></td>
+                <td>
+                    <input type="radio" name="jekel" value="Pria" id="Pria" />
+                    <label for="Pria">Pria</label>
+                    <input type="radio" name="jekel" value="Wanita" id="Wanita" />
+                    <label for="Pria">Wanita</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="hobby">Hobby</label></td>
+                <td>
+                    <input type="checkbox" name="hobby1" id="hobby1" value="gaming" />
+                    <label for="hobby1">Gaming</label>
+                    <input type="checkbox" name="hobby2" id="hobby2" value="Coding" />
+                    <label for="hobby1">Coding</label>
+                    <input type="checkbox" name="hobby3" id="hobby3" value="Sleeping" />
+                    <label for="hobby1">Sleeping</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="file"> Upload CV</label></td>
+                <td><input type="file" name="file" id="file" /></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Submit" /></td>
+                <td>
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
