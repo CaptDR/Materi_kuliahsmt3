@@ -8,8 +8,8 @@ class User:
     def login(self):
         print(f"{self.username} ({self.email}) berhasil login")
     #LOGOUT
-def logout(self):
-    print(f"{self.username} berhasil logout")
+    def logout(self):
+        print(f"{self.username} berhasil logout")
 
 #Class BasicUser
 class BasicUser(User):
