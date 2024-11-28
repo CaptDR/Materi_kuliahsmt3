@@ -1,0 +1,31 @@
+<InputForm>:
+    orientation : "vertical"
+    padding     : 20
+    spacing     : 10
+
+    Label:
+        text        : "Masukkan Data Mahasiswa"
+        font_size   : 24
+        size_hint_y : None
+        height      : 40
+    
+    TextInput:
+        id          : nama_input
+        hint_text   : "Nama"
+        multiline   : False
+
+    TextInput:
+        id          : nim_input
+        hint_text   : "NIM"
+        multiline   : False
+    
+    TextInput:
+        id          : jurusan_input
+        hint_text   : "Jurusan"
+        multiline   : False
+    
+    Button:
+        text        : "Tampilkan Data"
+        size_hint_y : None
+        height      : 40
+        on_release  : root.show_data()
