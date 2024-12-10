@@ -1,0 +1,1 @@
+SELECT * FROM stok_dibawah_rata2;
