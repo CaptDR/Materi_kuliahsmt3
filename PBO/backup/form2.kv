@@ -1,12 +1,12 @@
 <InputForm>:
     orientation: "horizontal"
-    padding: 40
-    spacing: 5
+    padding: 20
+    spacing: 20
     font_name: "Poppins.ttf"
 
     canvas.before:
         Color:
-            rgba: 173, 216, 230, 1
+            rgba: 0.678, 0.847, 0.902, 1
         Rectangle:
             pos: self.pos
             size: self.size
@@ -14,7 +14,7 @@
     # Membuat Boxlayout untuk Form InputForm:
     BoxLayout:
         orientation:"vertical"
-        size_hint: 0.4
+        size_hint_x: 0.4
         Image:
             source:'logo.png'
             size_hint_y: None
@@ -29,7 +29,7 @@
             color: app.get_color_from_hex("#3B554A")
 
         Label:
-            text: "Nama Lengkap:"
+            text: "Nama:"
             halign: "left"
             multiline: False
             text_size: self.size
@@ -111,18 +111,19 @@
             on_release: root.show_data()
     BoxLayout:
         orientation: 'vertical'
-        size_hint: 0.6
+        size_hint_x: 0.6
         canvas.before:
-            color:
+            Color:
                 rgba: 0,0,0,1
-            line: 
+            Line: 
                 width: 1.5
                 rectangle: self.x, self.y, self.width, self.height
 
-            Label:
-                text: "Tabel Mahasiswa"
-                size_hint: None
-                height: 30
+        Label:
+            text: "Tabel Mahasiswa"
+            size_hint_y: None
+            height: 30
+            size_hint_x: 1
         ScrollView:
             GridLayout:
                 id: tabel_mahasiswa
