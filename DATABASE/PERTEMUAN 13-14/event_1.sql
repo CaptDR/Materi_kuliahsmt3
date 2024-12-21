@@ -1,0 +1,4 @@
+CREATE EVENT hapus_transaksi_lama
+ON SCHEDULE EVERY 1 MINUTE
+DO
+   DELETE FROM tbl_faktur WHERE tanggal < NOW() - INTERVAL 1 YEAR
