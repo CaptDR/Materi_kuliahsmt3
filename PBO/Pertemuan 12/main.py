@@ -173,31 +173,6 @@ class InputForm(BoxLayout):
             self.show_table()
         except Exception as e:
             self.show_error_popup(f"Gagal Menghapus Data: {str(e)}")
-    # def show_data(self):
-    #     # Ambil data dari text input
-    #     nama = self.ids.nama_input.text
-    #     nim = self.ids.nim_input.text
-    #     jurusan = self.ids.jurusan_input.text
-    #     # Format data untuk ditampilkan
-    #     data = f"Nama: {nama}\nNIM: {nim}\nJurusan: {jurusan}"
-    #     # Buat PopUp
-    #     popup = Popup(
-    #         title="Data Mahasiswa",
-    #         content=Label(text=data), 
-    #         size_hint=(0.8, 0.4),
-    #         auto_dismiss=True,
-    #     )
-
-    #     # Tambahkan tombol untuk menutup pop-up
-    #     content = BoxLayout(orientation='vertical')
-    #     content.add_widget(Label(text=data))
-    #     close_btn = Button(text="Tutup", size_hint_y=None, height=40)
-    #     close_btn.bind(on_release=popup.dismiss)
-    #     popup.content.add_widget(close_btn)
-
-        
-    #     # Tampilkan pop-up
-    #     popup.open()
         
     def on_close(self):
         self.mycursor.close()
